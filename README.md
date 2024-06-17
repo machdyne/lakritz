@@ -2,6 +2,8 @@
 
 Lakritz is an FPGA computer designed by Lone Dynamics Corporation.
 
+![Lakritz Computer](https://github.com/machdyne/lakritz/blob/570c8733f1c3a25d6e241fe2c17254a944a328bc/lakritz.png)
+
 This repo will contain schematics, PCB layouts, pinouts, a 3D-printable case, example gateware and documentation.
 
 Find more information on the [Lakritz product page](https://machdyne.com/product/lakritz-computer/).
