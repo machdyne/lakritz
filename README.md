@@ -64,7 +64,7 @@ See the [Kakao Linux](https://github.com/machdyne/kakao) repo for the latest ins
 
 ### Prebuilt Images
 
-Copy the files from the `images/linux` directory to the root directory of a FAT-formatted MicroSD card along with the files from the `images` directory in the [Kakao Linux](https://github.com/machdyne/kakao) repo.
+Copy the files from the `images/linux` and `images/v0/25f` directory to the root directory of a FAT-formatted MicroSD card along with the files from the `images` directory in the [Kakao Linux](https://github.com/machdyne/kakao) repo.
 
 Lakritz ships with LiteX gateware on the user gateware section of the MMOD that is compatible with these images. After several seconds the Linux penguin should appear on the screen (HDMI) followed by a login prompt.
 
