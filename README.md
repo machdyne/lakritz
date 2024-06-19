@@ -56,7 +56,7 @@ openFPGALoader -f -c usb-blaster images/bootloader/tinydfu_lakritz.bit
 
 Building the blinky example requires [Yosys](https://github.com/YosysHQ/yosys), [nextpnr-ecp5](https://github.com/YosysHQ/nextpnr) and [Project Trellis](https://github.com/YosysHQ/prjtrellis).
 
-Assuming they are installed, you can simply type `make` to build the gateware, which will be written to output/blinky.bin. You can then use [openFPGALoader](https://github.com/trabucayre/openFPGALoader) or dfu-util to write the gateware to the device.
+Assuming they are installed, you can simply type `make` to build the gateware, which will be written to output/lakritz.bit. You can then use [openFPGALoader](https://github.com/trabucayre/openFPGALoader) or dfu-util to write the gateware to the device.
 
 ## Linux
 
