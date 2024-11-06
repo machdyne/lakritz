@@ -97,7 +97,6 @@ Now run:
 $ bash build_lakritz.sh
 ```
 
-
 2. Write the gateware to the MMOD using USB DFU:
 
 ```
@@ -108,27 +107,9 @@ $ sudo dfu-util -a 0 -D build/lakritz/gateware/lakritz.bit
 
 4. Build the Linux kernel and root filesystem:
 
-```
-$ cd ..
-$ git clone http://github.com/buildroot/buildroot
-$ cd buildroot
-$ make BR2_EXTERNAL=../linux-on-litex-vexriscv/buildroot/ litex_vexriscv_usbhost_defconfig
-```
+See the [Kakao Linux](https://github.com/machdyne/kakao?tab=readme-ov-file#optional-building-kakao-linux) repo for instructions.
 
-Optionally customize the kernel and buildroot packages:
-
-```
-$ make menuconfig
-```
-
-Build the kernel and rootfs:
-
-```
-$ make
-$ ls output/images
-```
-
-5. Copy the `Image` and `rootfs.cpio` files from output/images to the MicroSD card.
+5. Copy the Image and rootfs.cpio files generated in the previous step to the boot partition of the MicroSD card, in addition to the following files:
 
 6. Copy the OpenSBI binary (included in this repo as `lakritz/images/linux/opensbi.bin`) to the MicroSD card. Alternatively, you can build this binary by following [these instructions](https://github.com/litex-hub/linux-on-litex-vexriscv#-generating-the-opensbi-binary-optional).
 
